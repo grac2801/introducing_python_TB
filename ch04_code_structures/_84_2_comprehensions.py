@@ -37,4 +37,14 @@ if __name__ == '__main__':
     #[Expression for item in iterable]
     number_list = [number for number in range(1, 6)]
     print(number_list)
+    
+    #[first number is an expression]
+    number_list = [number -1 for number in range(1, 6)]
+    print('number list (number - 1): ', number_list)
         
+    print('\n\n')
+    print('===============================================')
+    print('TOPIC: --->', 'adding a condition')
+    print('===============================================')
+    a_list = [number for number in range(1, 6) if number % 2 == 1]
+    print(a_list)
