@@ -48,3 +48,57 @@ if __name__ == '__main__':
     print('===============================================')
     a_list = [number for number in range(1, 6) if number % 2 == 1]
     print(a_list)
+    
+    
+    
+    print('\n\n')
+    print('===============================================')
+    print('TOPIC: --->', 'compare to regular form')
+    print('===============================================')
+    a_list = []
+    for number in range(1, 6):
+        if number % 2 == 1:
+            a_list.append(number)
+    print(a_list)
+    
+    
+    print('\n\n')
+    print('===============================================')
+    print('TOPIC: --->', 'Nested loops')
+    print('===============================================')
+    rows = range(1, 4)
+    cols = range(1, 3)
+    for row in rows:
+        for col in cols:
+            print(row, col)
+            
+            
+    print('\n\n')
+    print('===============================================')
+    print('TOPIC: --->', 'multiplication table')
+    print('===============================================')
+    x = 5
+    space = "{:<3}".format('')
+    print(space, end = '')
+    for row in range(1, 6):
+        print(f'{x:<3}', end = '')
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
