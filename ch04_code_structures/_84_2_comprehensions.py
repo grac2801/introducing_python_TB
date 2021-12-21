@@ -73,15 +73,24 @@ if __name__ == '__main__':
             print(row, col)
             
             
+    #===========================================================================
+    # Have students do this part as an exercise
+    #===========================================================================
     print('\n\n')
     print('===============================================')
     print('TOPIC: --->', 'multiplication table')
     print('===============================================')
-    x = 5
-    space = "{:<3}".format('')
-    print(space, end = '')
+    print(f'{"":<5}', end = '')
     for row in range(1, 6):
-        print(f'{x:<3}', end = '')
+            print(f'{row:<5}', end = '')
+    print()
+    for leftCols in range(1, 6):
+        print(f'{leftCols:<5}', end = '')
+        for row in range(1, 6):
+            print(f'{leftCols * row:<5}', end = '')
+        print()
+        
+        
         
     
     
