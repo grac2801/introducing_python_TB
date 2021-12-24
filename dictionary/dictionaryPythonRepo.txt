@@ -84,3 +84,7 @@ mardi
 mercredi
 comprehensions
 pydevproject
+entree
+chardonnay
+frontsenac
+flan
