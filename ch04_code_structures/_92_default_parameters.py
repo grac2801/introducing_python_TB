@@ -1,7 +1,8 @@
 '''
-author: mrgracias
-Year: 2021
+author: oscar
+date: 2021-12-27 19:06
 '''
+
 # imports
 
 
@@ -18,6 +19,16 @@ def buggy(arg, result = []):
     result.append(arg)
     print(result)
 
+def buggy1(arg):
+    result = []
+    result.append(arg)
+    return result
+
+def buggy3(args, result = None):
+    if result is None:
+        result = []
+    result.append(args)
+    return result
 
 if __name__ == '__main__':
     print('\n\n')
@@ -47,3 +58,17 @@ if __name__ == '__main__':
     print('===============================================')
     buggy('a')
     buggy('b')
+    
+    print('\n\n')
+    print('===============================================')
+    print('TOPIC: --->', 'change function from buggy to buggy1')
+    print('===============================================')
+    print(buggy1('a'))
+    print(buggy1('b'))
+
+    print('\n\n')
+    print('===============================================')
+    print('TOPIC: --->', 'Same buggy2 but using None')
+    print('===============================================')
+    print(buggy3('a'))
+    print(buggy3('b'))
