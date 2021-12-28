@@ -20,6 +20,12 @@ if __name__ == '__main__':
     #in a functions, an * groups a variable number of positional
     #arguments into a tuple of parameter values.
     print_args()
+    
+    print('\n\n')
+    print('===============================================')
+    print('TOPIC: --->', 'set up some parameters')
+    print('===============================================')
+    print_args(3, 2, 1, 'wait', 'uh...')
 
 
     
